@@ -1,0 +1,8 @@
+{
+
+    "games":[
+        {"id": 1, "name": "Mortal Kombat", "release": 2011},
+        {"id": 2, "name": "Hollow Knight", "release": 2017}
+    ]
+
+}
