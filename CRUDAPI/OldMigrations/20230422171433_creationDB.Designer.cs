@@ -40,8 +40,8 @@ namespace CRUDAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("GameRelease")
-                        .HasColumnType("int");
+                    b.Property<string>("GameRelease")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("GameId");
 

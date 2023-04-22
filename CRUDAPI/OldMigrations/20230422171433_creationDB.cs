@@ -17,7 +17,7 @@ namespace CRUDAPI.Migrations
                     GameId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     GameName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    GameRelease = table.Column<int>(type: "int", nullable: false),
+                    GameRelease = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     GameDetails = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
