@@ -176,7 +176,7 @@ API Rest O que é API? REST e RESTful?: https://www.youtube.com/watch?v=ghTrp1x_
 
 GET POST
 
-.NET Core .Net Framework VS .Net Core - Qual é a diferença ?: https://www.youtube.com/watch?v=PM1JKY41wnw /  CRUD com Angular e .Net Core Web API - Preparando o ambiente #1: https://www.youtube.com/watch?v=qJTClZKSwQM&list=PLTESsx8-vfPnQ-s4jM-jGrYQMOVg7t1u6
+.NET Core .Net Framework VS .Net Core - Qual é a diferença ?: https://www.youtube.com/watch?v=PM1JKY41wnw /  CRUD com Angular e .Net Core Web API - Preparando o ambiente #1: https://www.youtube.com/watch?v=qJTClZKSwQM&list=PLTESsx8-vfPnQ-s4jM-jGrYQMOVg7t1u6 //// https://www.youtube.com/watch?v=vmJ5rJaIJFA
 
 requisição http basica
 
@@ -233,3 +233,7 @@ requisição http basica
 <section>
   <router-outlet></router-outlet>
 </section> -->
+
+
+CONFIGURANDO O SQL SERVER
+https://www.youtube.com/watch?v=fvpeb-MFtgQ
