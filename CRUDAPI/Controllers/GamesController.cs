@@ -49,6 +49,9 @@ namespace CRUDAPI.Controllers
         [HttpDelete("{GameId}")]
         public async Task<ActionResult> DeleteGameAsync(int GameId){
             Game game = await _context.Games.FindAsync(GameId);
+            if(game == null)
+                return NotFound();
+
             _context.Remove(game);
             await _context.SaveChangesAsync();
 

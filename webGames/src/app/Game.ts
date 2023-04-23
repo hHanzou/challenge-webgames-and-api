@@ -1,9 +1,6 @@
-export interface Game {
-    id?: Number,
-    title: String,
-    release: Number,
-    dev: String,
-    category: String,
-    description: String
-
+export class Game {
+    GameId: number = 0;
+    GameName: string = "";
+    GameRelease: string = "";
+    GameDetails: string = "";
 }

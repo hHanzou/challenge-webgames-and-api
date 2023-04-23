@@ -11,3 +11,5 @@ need to configure controller (CRUD) to test if string connection and db are work
 then apply site automatics mechanics
 
 https://www.youtube.com/watch?v=zr3QiQDZ0-k
+
+vou criar o controller com base no video do programação binaria
