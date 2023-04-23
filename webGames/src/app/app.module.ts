@@ -17,6 +17,7 @@ import { AddCategoriesComponent } from './components/pages/add-categories/add-ca
 import { GameformsComponent } from './components/gameforms/gameforms.component';
 import { CategoryformsComponent } from './components/categoryforms/categoryforms.component';
 import { ListcategoriesComponent } from './components/listcategories/listcategories.component';
+import { CardgameComponent } from './components/cardgame/cardgame.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ListcategoriesComponent } from './components/listcategories/listcategor
     AddCategoriesComponent,
     GameformsComponent,
     CategoryformsComponent,
-    ListcategoriesComponent
+    ListcategoriesComponent,
+    CardgameComponent
   ],
   imports: [
     BrowserModule,

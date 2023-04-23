@@ -15,7 +15,7 @@ const httpOptions = {
 export class GamesService {
   url = 'http://localhost:5145/api/games';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
     GetAll(): Observable<Game[]> {
       return this.http.get<Game[]>(this.url);

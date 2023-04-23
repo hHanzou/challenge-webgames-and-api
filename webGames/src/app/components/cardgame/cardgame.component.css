@@ -1,0 +1,22 @@
+  /* imagem dos cards */
+  /* .img-card{ */
+    /* height: 329px; */
+
+
+
+  /* altura dos cards */
+  .card{
+    height: 190px;
+    margin-top: 10px;
+  }
+
+  /* ajustando os cards */
+.max-height-col {
+    max-height: 100px;  
+}
+
+/* tamanho do botao */
+.btnwid{
+    width: 12rem;
+    align-self: center;
+}

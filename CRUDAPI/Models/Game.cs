@@ -9,7 +9,7 @@ namespace CRUDAPI.Models
 
      public string GameRelease { get; set; }
 
-    //  public string GameDevs { get; set; }
+     public string GameDevs { get; set; }
 
      public string GameDetails { get; set; }
 

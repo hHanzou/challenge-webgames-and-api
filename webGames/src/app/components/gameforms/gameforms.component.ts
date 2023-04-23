@@ -21,7 +21,8 @@ export class GameformsComponent implements OnInit {
     this.form = new FormGroup({
       GameName: new FormControl(null),
       GameRelease: new FormControl(null),
-      GameDetails: new FormControl(null)
+      GameDetails: new FormControl(null),
+      GameDevs: new FormControl(null)
 
     })
   }

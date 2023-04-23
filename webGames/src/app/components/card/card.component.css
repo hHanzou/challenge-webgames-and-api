@@ -1,0 +1,15 @@
+  /* imagem dos cards */
+  .img-card{
+    height: 329px;
+  }
+  /* altura dos cards */
+  .card{
+    height: 550px;
+    margin-top: 10px;
+  }
+  
+  /* ajustando os cards */
+.max-height-col {
+    max-height: 80px; 
+    overflow-y:auto; 
+}

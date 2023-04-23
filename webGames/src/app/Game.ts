@@ -3,4 +3,5 @@ export class Game {
     GameName: string = "";
     GameRelease: string = "";
     GameDetails: string = "";
+    GameDevs: string = "";
 }
