@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: 'add-games', component: AddGamesComponent},
   {path: 'add-categories', component: AddCategoriesComponent},
   {path: 'gamedetails/:id', component: GamedetailsComponent},
-  {path: 'editgame/:id', component: EditgameComponent}
+  {path: 'gamedetails/:id/editgame/:id', component: EditgameComponent}
 ];
 
 @NgModule({

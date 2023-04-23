@@ -1,7 +1,9 @@
 <body class="main-box container-parallax">
+    <!-- cabecalho -->
     <header>
         <app-header></app-header>
     </header>
+    <!-- conteudo principal -->
     <main class="container">
         <div id="box" *ngIf="game">
             <div id="contentarea" class="p-4 m-4 bg-light rounded">
@@ -26,12 +28,26 @@
                     <h6>{{game.gameDevs}}</h6>
                 </div>
                 <div id="buttonarea">
-                    <button type="submit" class="btn btn-warning text-light fw-semibold m-2 mb-0" style="width: 150px;" routerLink="editgame/:id">Edit</button>
-                    <button type="submit" class="btn btn-danger fw-semibold m-2 mb-0">Delete</button>
+                    <button type="submit" class="btn btn-warning text-light fw-semibold m-2 mb-0" style="width: 150px;" routerLink="editgame/{{game.gameId}}">Edit</button>
+                    <button type="submit" class="btn btn-danger fw-semibold m-2 mb-0" (click)="ShowDeleteConfirmation(game.gameId, game.gameName, modalContent)">Delete</button>
                 </div>
             </div>
         </div> 
     </main>
+    <!-- modal para confirmacao de exclusao -->
+    <ng-template #modalContent>  
+        <div class="modal-header">
+            <h5 class="modal-title">Delete Confirmation</h5>
+        </div>
+        <div class="modal-body">
+            <p>Do you really want to delete the game {{gameName}}?</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="CloseModal()">No, Close</button>
+            <button type="button" class="btn btn-danger" (click)="DeleteGame(gameId)">Yes, Delete</button>
+        </div>
+    </ng-template>
+    <!-- footer -->
     <footer>
         <app-footer></app-footer>
     </footer> 
