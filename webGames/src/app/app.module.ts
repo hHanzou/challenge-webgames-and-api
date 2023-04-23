@@ -18,6 +18,8 @@ import { GameformsComponent } from './components/gameforms/gameforms.component';
 import { CategoryformsComponent } from './components/categoryforms/categoryforms.component';
 import { ListcategoriesComponent } from './components/listcategories/listcategories.component';
 import { CardgameComponent } from './components/cardgame/cardgame.component';
+import { GamedetailsComponent } from './components/pages/gamedetails/gamedetails.component';
+import { EditgameComponent } from './components/pages/editgame/editgame.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { CardgameComponent } from './components/cardgame/cardgame.component';
     GameformsComponent,
     CategoryformsComponent,
     ListcategoriesComponent,
-    CardgameComponent
+    CardgameComponent,
+    GamedetailsComponent,
+    EditgameComponent
   ],
   imports: [
     BrowserModule,

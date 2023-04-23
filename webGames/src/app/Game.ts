@@ -1,7 +1,7 @@
 export class Game {
-    GameId: number = 0;
-    GameName: string = "";
-    GameRelease: string = "";
-    GameDetails: string = "";
-    GameDevs: string = "";
+    gameId: number = 0;
+    gameName: string = "";
+    gameRelease: string = "";
+    gameDetails: string = "";
+    gameDevs: string = "";
 }

@@ -1,0 +1,31 @@
+/* "container" do conteudo da page */
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contentarea{
+    width: 700px;
+}
+
+/* formatação da area de descricao */
+#detailsarea{
+
+    min-height: 200px;
+
+}
+p {
+    max-height: 200px; 
+    overflow-y:auto;
+    overflow-wrap: break-word;
+}
+
+/* formatacao da area dos botoes */
+#buttonarea{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 150px;
+}

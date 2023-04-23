@@ -1,14 +1,10 @@
-<div  *ngIf="games">
-    <div *ngFor="let game of games"> 
-        <div class="col-4">
-            <div class="card" style="width: 18rem;">
-                <div class="card-body mt-3">
-                    <h5 class="card-title"><!--{{ games.GameName }} ({{ games.GameRelease }})--></h5>
-                    <h6>Categoria: Luta</h6>
-                    <h6>Developers: {{ games.GameDevs }}</h6>
-                </div>
-                <button type="submit" class="btn btn-primary m-2 btnwid">More Details</button>
-            </div>
+<div class="col-4" *ngFor="let game of games">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body mt-3 max-height-col">
+            <h5 class="card-title">{{ game.gameName }} ({{ game.gameRelease }})</h5>
+            <h6>Categoria: Luta</h6>
+            <h6>Developers: {{ game.gameDevs }}</h6>
         </div>
+        <button type="submit" class="btn btn-primary m-2 btnwid" routerLink="gamedetails/id">More Details</button>
     </div>
 </div>

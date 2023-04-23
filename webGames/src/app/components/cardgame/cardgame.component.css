@@ -6,13 +6,12 @@
 
   /* altura dos cards */
   .card{
-    height: 190px;
     margin-top: 10px;
   }
 
   /* ajustando os cards */
 .max-height-col {
-    max-height: 100px;  
+    min-height: 230px;  
 }
 
 /* tamanho do botao */
