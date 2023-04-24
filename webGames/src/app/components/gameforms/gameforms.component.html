@@ -5,35 +5,39 @@
         </div>
         <div class="m-4 mt-0 form-group">
         <label class="form-label">Name:</label>
-        <input type="text" class="form-control form-control-sm" formControlName="GameName" placeholder="Ex: Super Mario Bros">
+        <input type="text" required class="form-control form-control-sm" formControlName="GameName" placeholder="Ex: Super Mario Bros">
         </div>
         <div class="m-4 form-group">
         <label class="form-label">Release:</label>
-        <input type="text" class="form-control form-control-sm" formControlName="GameRelease" placeholder="(Colocar apenas o ano) Ex: 2009">
+        <input type="number" required class="form-control form-control-sm" formControlName="GameRelease" placeholder="(Colocar apenas o ano) Ex: 2009">
         </div>
         <div class="m-4">
             <label class="form-label">Developer(s):</label>
-            <input type="text" class="form-control form-control-sm" formControlName="GameDevs" placeholder="Ex: Empresa 1, Empresa 2...">
+            <input type="text" required class="form-control form-control-sm" formControlName="GameDevs" placeholder="Ex: Empresa 1, Empresa 2...">
         </div>
         <div class="m-4">
-            <label class="form-label">Categories:</label>
-            <div class="input-group mb-3">
-                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"></a></li>
-                  <li><a class="dropdown-item" href="#"></a></li>
-                  <li><a class="dropdown-item" href="#"></a></li>
-                </ul>
-                <input type="text" class="form-control" aria-label="Text input with dropdown button">
-              </div>
+            <fieldset disabled="disabled">
+                <label class="form-label">Categories:</label>
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    </ul>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                </div>
+            </fieldset>
         </div>
         <div class="m-4 form-group">
             <label class="form-label">Description:</label>
-        <textarea class="form-control" rows="2" placeholder="Ex: Super Mario é uma série de jogos eletrônicos de plataforma, criada pela Nintendo, baseada e estrelada pelo encanador fictício Mario..." formControlName="GameDetails"></textarea>
+            <textarea class="form-control" required rows="2" placeholder="Ex: Super Mario é uma série de jogos eletrônicos de plataforma, criada pela Nintendo, baseada e estrelada pelo encanador fictício Mario..." formControlName="GameDetails"></textarea>
         </div>
         <div class="m-4 mb-2">
-            <label class="form-label">Upload a Image:</label>
-            <input class="form-control form-control-sm" id="formFileSm" type="file">
+            <fieldset disabled="disabled">
+                <label class="form-label">Upload a Image:</label>
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
+            </fieldset>
         </div>
         <div id="buttonarea">
             <button type="submit" class="btn btn-primary m-2 mb-0" style="width: 150px;">Submit</button>

@@ -8,12 +8,12 @@
         <div id="box" *ngIf="game">
             <div id="contentarea" class="p-4 m-4 bg-light rounded">
                 <div>
-                    <h3>{{game.gameName}}</h3>
+                    <h3>{{game.gameName}} ({{game.gameRelease}})</h3>
                 </div>
                 <hr>
                 <div>
                     <h5>Categories:</h5>
-                    <h6>Luta</h6>
+                    <h6>...</h6>
                 </div>
                 <hr>
                 <div id="detailsarea">
@@ -44,7 +44,7 @@
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="CloseModal()">No, Close</button>
-            <button type="button" class="btn btn-danger" (click)="DeleteGame(gameId)">Yes, Delete</button>
+            <button type="button" class="btn btn-danger" routerLink="/" (click)="DeleteGame(gameId)">Yes, Delete</button>
         </div>
     </ng-template>
     <!-- footer -->

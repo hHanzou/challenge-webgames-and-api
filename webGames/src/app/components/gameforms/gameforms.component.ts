@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Game } from 'src/app/Game';
 import { GamesService } from 'src/app/services/games.service';
 
@@ -19,16 +19,17 @@ export class GameformsComponent implements OnInit {
     
     this.formtittle = "New Game";
     this.form = new FormGroup({
-      GameName: new FormControl(null),
-      GameRelease: new FormControl(null),
-      GameDetails: new FormControl(null),
-      GameDevs: new FormControl(null)
-
-    })
+      GameName: new FormControl(null, Validators.required),
+      GameRelease: new FormControl(null, Validators.required),
+      GameDetails: new FormControl(null, Validators.required),
+      GameDevs: new FormControl(null, Validators.required)
+    });
+    
   }
 
   SendForm(): void{
-    const game : Game = this.form.value;
+    const game = this.form.value;
+    game.GameRelease = game.GameRelease.toString()
 
     this.gamesService.SaveGame(game).subscribe(
       (result) => {

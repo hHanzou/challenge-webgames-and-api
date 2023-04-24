@@ -1,0 +1,18 @@
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonarea{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#tarea{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}

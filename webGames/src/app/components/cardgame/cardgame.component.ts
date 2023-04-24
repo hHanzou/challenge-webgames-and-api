@@ -8,7 +8,7 @@ import { GamesService } from 'src/app/services/games.service';
   styleUrls: ['./cardgame.component.css']
 })
 export class CardgameComponent implements OnInit {
-  games: Game[] = []
+  games: Game[] = [];
 
   constructor(private gamesService: GamesService) {}
   
